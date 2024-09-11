@@ -58,6 +58,11 @@ module.exports = {
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    alias: {
+      components: path.resolve(__dirname, 'src/components/'),
+      utils: path.resolve(__dirname, 'src/utils/'),
+      styles: path.resolve(__dirname, 'src/styles/'),
+    },
   },
   devServer: {
     static: path.join(__dirname, 'dist'),
